@@ -70,11 +70,41 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="actMgt.Designer.vb">
+      <DependentUpon>actMgt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="actMgt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addInven.Designer.vb">
+      <DependentUpon>addInven.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addInven.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.vb">
+      <DependentUpon>AdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDel.Designer.vb">
+      <DependentUpon>EditDel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditDel.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logs.Designer.vb">
+      <DependentUpon>Logs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logs.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -92,16 +122,40 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="UserForm.Designer.vb">
+      <DependentUpon>UserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="actMgt.resx">
+      <DependentUpon>actMgt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addInven.resx">
+      <DependentUpon>addInven.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDel.resx">
+      <DependentUpon>EditDel.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logs.resx">
+      <DependentUpon>Logs.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

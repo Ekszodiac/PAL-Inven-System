@@ -30,6 +30,7 @@ Partial Class Form1
         Me.idbox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ISDLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -39,9 +40,9 @@ Partial Class Form1
         Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(118, 85)
+        Me.PictureBox1.Location = New System.Drawing.Point(47, 103)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(492, 150)
+        Me.PictureBox1.Size = New System.Drawing.Size(790, 153)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
@@ -54,7 +55,7 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.idbox)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(201, 264)
+        Me.Panel1.Location = New System.Drawing.Point(283, 324)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(345, 131)
         Me.Panel1.TabIndex = 2
@@ -105,12 +106,25 @@ Partial Class Form1
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "ID Number"
         '
+        'ISDLabel
+        '
+        Me.ISDLabel.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ISDLabel.AutoSize = True
+        Me.ISDLabel.Font = New System.Drawing.Font("Helvetica", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ISDLabel.ForeColor = System.Drawing.Color.White
+        Me.ISDLabel.Location = New System.Drawing.Point(50, 268)
+        Me.ISDLabel.Name = "ISDLabel"
+        Me.ISDLabel.Size = New System.Drawing.Size(780, 46)
+        Me.ISDLabel.TabIndex = 3
+        Me.ISDLabel.Text = "INFORMATION SYSTEMS DEPARTMENT"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(721, 447)
+        Me.ClientSize = New System.Drawing.Size(884, 543)
         Me.ControlBox = False
+        Me.Controls.Add(Me.ISDLabel)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
@@ -119,6 +133,7 @@ Partial Class Form1
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
@@ -128,5 +143,6 @@ Partial Class Form1
     Friend WithEvents idbox As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents ISDLabel As System.Windows.Forms.Label
 
 End Class
