@@ -122,6 +122,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SQLControl.vb" />
     <Compile Include="UserForm.Designer.vb">
       <DependentUpon>UserForm.vb</DependentUpon>
     </Compile>
