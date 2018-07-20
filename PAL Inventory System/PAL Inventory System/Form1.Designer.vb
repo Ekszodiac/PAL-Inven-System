@@ -31,6 +31,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ISDLabel = New System.Windows.Forms.Label()
+        Me.exitBut = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -50,6 +51,7 @@ Partial Class Form1
         '
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.exitBut)
         Me.Panel1.Controls.Add(Me.loginbut)
         Me.Panel1.Controls.Add(Me.pwbox)
         Me.Panel1.Controls.Add(Me.idbox)
@@ -65,7 +67,7 @@ Partial Class Form1
         Me.loginbut.BackColor = System.Drawing.Color.Khaki
         Me.loginbut.FlatAppearance.BorderColor = System.Drawing.Color.Gold
         Me.loginbut.FlatAppearance.BorderSize = 0
-        Me.loginbut.Location = New System.Drawing.Point(99, 81)
+        Me.loginbut.Location = New System.Drawing.Point(180, 81)
         Me.loginbut.Name = "loginbut"
         Me.loginbut.Size = New System.Drawing.Size(132, 38)
         Me.loginbut.TabIndex = 9
@@ -118,6 +120,19 @@ Partial Class Form1
         Me.ISDLabel.TabIndex = 3
         Me.ISDLabel.Text = "INFORMATION SYSTEMS DEPARTMENT"
         '
+        'exitBut
+        '
+        Me.exitBut.BackColor = System.Drawing.Color.Maroon
+        Me.exitBut.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.exitBut.FlatAppearance.BorderSize = 0
+        Me.exitBut.ForeColor = System.Drawing.Color.White
+        Me.exitBut.Location = New System.Drawing.Point(17, 81)
+        Me.exitBut.Name = "exitBut"
+        Me.exitBut.Size = New System.Drawing.Size(132, 38)
+        Me.exitBut.TabIndex = 10
+        Me.exitBut.Text = "Exit"
+        Me.exitBut.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -144,5 +159,6 @@ Partial Class Form1
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ISDLabel As System.Windows.Forms.Label
+    Friend WithEvents exitBut As System.Windows.Forms.Button
 
 End Class

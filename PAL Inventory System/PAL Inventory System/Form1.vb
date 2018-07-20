@@ -17,6 +17,9 @@ Public Class Form1
         AdminForm.Show()
         'UserForm.Show()
         'Logs.Show()
+    End Sub
 
+    Private Sub exitBut_Click(sender As Object, e As EventArgs) Handles exitBut.Click
+        Close()
     End Sub
 End Class

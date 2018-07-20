@@ -33,3 +33,4 @@ C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory S
 C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.addInven.resources
 C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.EditDel.resources
 C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.Logs.resources
+C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.actMgt.resources

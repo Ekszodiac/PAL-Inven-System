@@ -122,6 +122,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PAL_INVENDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PAL_INVENDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SQLControl.vb" />
     <Compile Include="UserForm.Designer.vb">
       <DependentUpon>UserForm.vb</DependentUpon>
@@ -170,6 +175,17 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="PAL_INVENDataSet.xsc">
+      <DependentUpon>PAL_INVENDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PAL_INVENDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PAL_INVENDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PAL_INVENDataSet.xss">
+      <DependentUpon>PAL_INVENDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
