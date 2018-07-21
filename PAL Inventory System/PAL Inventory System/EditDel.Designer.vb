@@ -23,6 +23,7 @@ Partial Class EditDel
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.saveBut = New System.Windows.Forms.Button()
         Me.acqBox = New System.Windows.Forms.DateTimePicker()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.remTxtbx = New System.Windows.Forms.TextBox()
@@ -36,7 +37,6 @@ Partial Class EditDel
         Me.delInvenBut = New System.Windows.Forms.Button()
         Me.closeBut = New System.Windows.Forms.Button()
         Me.editInvenBut = New System.Windows.Forms.Button()
-        Me.saveBut = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -63,6 +63,17 @@ Partial Class EditDel
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(754, 438)
         Me.Panel1.TabIndex = 1
+        '
+        'saveBut
+        '
+        Me.saveBut.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.saveBut.Location = New System.Drawing.Point(514, 412)
+        Me.saveBut.Name = "saveBut"
+        Me.saveBut.Size = New System.Drawing.Size(75, 23)
+        Me.saveBut.TabIndex = 26
+        Me.saveBut.Text = "Save"
+        Me.saveBut.UseVisualStyleBackColor = True
+        Me.saveBut.Visible = False
         '
         'acqBox
         '
@@ -178,17 +189,6 @@ Partial Class EditDel
         Me.editInvenBut.TabIndex = 12
         Me.editInvenBut.Text = "Edit"
         Me.editInvenBut.UseVisualStyleBackColor = True
-        '
-        'saveBut
-        '
-        Me.saveBut.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.saveBut.Location = New System.Drawing.Point(514, 412)
-        Me.saveBut.Name = "saveBut"
-        Me.saveBut.Size = New System.Drawing.Size(75, 23)
-        Me.saveBut.TabIndex = 26
-        Me.saveBut.Text = "Save"
-        Me.saveBut.UseVisualStyleBackColor = True
-        Me.saveBut.Visible = False
         '
         'EditDel
         '

@@ -75,6 +75,19 @@
     End Sub
 
     Private Sub signOutBut_Click(sender As Object, e As EventArgs) Handles signOutBut.Click
+        If MsgBox("Are you sure you want to sign out?", MsgBoxStyle.YesNo, "Sign Out") Then
+            Me.Hide()
+            Form1.Show()
+        End If
+    End Sub
 
+    Private Sub printBut_Click(sender As Object, e As EventArgs) Handles printBut.Click
+        Me.Hide()
+        printForm.Show()
+    End Sub
+
+    Private Sub logBtn_Click(sender As Object, e As EventArgs) Handles logBtn.Click
+        Me.Hide()
+        Logs.Show()
     End Sub
 End Class

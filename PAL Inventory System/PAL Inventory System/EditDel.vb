@@ -52,8 +52,9 @@
             Me.Hide()
             AdminForm.Show()
             AdminForm.LoadInven()
+        Else
+
         End If
     End Sub
-
 
 End Class

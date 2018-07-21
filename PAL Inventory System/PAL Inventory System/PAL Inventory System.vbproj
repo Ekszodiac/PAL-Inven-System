@@ -46,10 +46,19 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -127,6 +136,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PAL_INVENDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="printForm.Designer.vb">
+      <DependentUpon>printForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="printForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printReports.Designer.vb">
+      <DependentUpon>printReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="printReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SQLControl.vb" />
     <Compile Include="UserForm.Designer.vb">
       <DependentUpon>UserForm.vb</DependentUpon>
@@ -159,6 +180,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printForm.resx">
+      <DependentUpon>printForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printReports.resx">
+      <DependentUpon>printReports.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.vb</DependentUpon>

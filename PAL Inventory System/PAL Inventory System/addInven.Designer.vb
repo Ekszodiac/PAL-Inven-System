@@ -100,28 +100,28 @@ Partial Class addInven
         '
         Me.remTxtbx.Location = New System.Drawing.Point(183, 118)
         Me.remTxtbx.Name = "remTxtbx"
-        Me.remTxtbx.Size = New System.Drawing.Size(100, 20)
+        Me.remTxtbx.Size = New System.Drawing.Size(200, 20)
         Me.remTxtbx.TabIndex = 9
         '
         'snTxtbx
         '
         Me.snTxtbx.Location = New System.Drawing.Point(183, 82)
         Me.snTxtbx.Name = "snTxtbx"
-        Me.snTxtbx.Size = New System.Drawing.Size(100, 20)
+        Me.snTxtbx.Size = New System.Drawing.Size(200, 20)
         Me.snTxtbx.TabIndex = 8
         '
         'descTxtbx
         '
         Me.descTxtbx.Location = New System.Drawing.Point(183, 45)
         Me.descTxtbx.Name = "descTxtbx"
-        Me.descTxtbx.Size = New System.Drawing.Size(100, 20)
+        Me.descTxtbx.Size = New System.Drawing.Size(200, 20)
         Me.descTxtbx.TabIndex = 7
         '
         'ptTxtbx
         '
         Me.ptTxtbx.Location = New System.Drawing.Point(183, 8)
         Me.ptTxtbx.Name = "ptTxtbx"
-        Me.ptTxtbx.Size = New System.Drawing.Size(100, 20)
+        Me.ptTxtbx.Size = New System.Drawing.Size(200, 20)
         Me.ptTxtbx.TabIndex = 6
         '
         'Label4
