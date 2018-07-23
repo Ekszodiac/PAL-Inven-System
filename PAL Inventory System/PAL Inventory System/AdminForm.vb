@@ -54,8 +54,7 @@
     Private Sub editdelBut_Click(sender As Object, e As EventArgs) Handles editdelBut.Click
         'Me.Hide()
         'EditDel.Show()
-        If dgv1.Rows _
-            (dgv1.CurrentRow.Index).Cells(0).Value = True Then
+        If dgv1.Rows(dgv1.CurrentRow.Index).Cells(0).Value = True Then
             Me.Hide()
             EditDel.Show()
 
@@ -75,7 +74,8 @@
     End Sub
 
     Private Sub signOutBut_Click(sender As Object, e As EventArgs) Handles signOutBut.Click
-        If MsgBox("Are you sure you want to sign out?", MsgBoxStyle.YesNo, "Sign Out") Then
+        Dim ask As MsgBoxResult = MsgBox("Are you sure you want to Sign Out?", MsgBoxStyle.YesNo)
+        If ask = MsgBoxResult.Yes Then
             Me.Hide()
             Form1.Show()
         End If
@@ -89,5 +89,10 @@
     Private Sub logBtn_Click(sender As Object, e As EventArgs) Handles logBtn.Click
         Me.Hide()
         Logs.Show()
+    End Sub
+
+    Private Sub searchbut_Click(sender As Object, e As EventArgs) Handles searchbut.Click
+        SQL.AddParam("@item", "%" & txtSearch.Text & "%")
+        LoadInven("SELECT item_description AS 'DESCRIPTION', item_paltag AS PALTAG, item_sn as SERIAL, item_acqdate AS ACQUISITION, item_remarks as REMARKS, item_timestamp AS 'TIMESTAMP' FROM item WHERE item_description LIKE @item OR item_paltag LIKE @item OR item_sn LIKE @item OR item_remarks LIKE @item;")
     End Sub
 End Class

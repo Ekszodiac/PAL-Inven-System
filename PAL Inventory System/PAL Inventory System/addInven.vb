@@ -14,7 +14,10 @@ Public Class addInven
         If SQL.HasException Then Exit Sub
 
         SQL.ExecQuery("INSERT INTO  item (item_paltag, item_description, item_sn, item_acqdate, item_remarks, item_timestamp) VALUES (@paltag, @desc, @sn, @acq, @remarks, @now);")
-
+        MsgBox("Item added to the database!")
+        Me.Hide()
+        AdminForm.Show()
+        AdminForm.LoadInven()
         If SQL.HasException Then Exit Sub
     End Sub
 
@@ -36,10 +39,7 @@ Public Class addInven
         ptTxtbx.Text = ""
         descTxtbx.Text = ""
         snTxtbx.Text = ""
-        remTxtbx.Text = ""
-        Me.Hide()
-        AdminForm.Show()
-        AdminForm.LoadInven()
+        remTxtbx.Text = ""        
     End Sub
 
     Private Sub closeBut_Click(sender As Object, e As EventArgs) Handles closeBut.Click

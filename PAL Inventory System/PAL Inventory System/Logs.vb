@@ -40,4 +40,10 @@
             cell.Value = cell.FalseValue
         Next
     End Sub
+
+    Private Sub closeBut_Click(sender As Object, e As EventArgs) Handles closeBut.Click
+        Me.Hide()
+        AdminForm.Show()
+        AdminForm.LoadInven()
+    End Sub
 End Class

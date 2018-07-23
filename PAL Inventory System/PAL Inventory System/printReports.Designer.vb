@@ -22,29 +22,44 @@ Partial Class printReports
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.viewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.crv1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.PALInventory1 = New PAL_Inventory_System.PALInventory()
+        Me.showRep = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'viewer1
+        'crv1
         '
-        Me.viewer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.viewer1.Location = New System.Drawing.Point(12, 12)
-        Me.viewer1.Name = "viewer1"
-        Me.viewer1.Size = New System.Drawing.Size(413, 251)
-        Me.viewer1.TabIndex = 0
+        Me.crv1.ActiveViewIndex = -1
+        Me.crv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.crv1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.crv1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.crv1.Location = New System.Drawing.Point(0, 0)
+        Me.crv1.Name = "crv1"
+        Me.crv1.Size = New System.Drawing.Size(741, 384)
+        Me.crv1.TabIndex = 0
+        '
+        'showRep
+        '
+        Me.showRep.Location = New System.Drawing.Point(13, 42)
+        Me.showRep.Name = "showRep"
+        Me.showRep.Size = New System.Drawing.Size(176, 38)
+        Me.showRep.TabIndex = 1
+        Me.showRep.Text = "Show Reports"
+        Me.showRep.UseVisualStyleBackColor = True
         '
         'printReports
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(437, 275)
-        Me.Controls.Add(Me.viewer1)
+        Me.ClientSize = New System.Drawing.Size(741, 384)
+        Me.Controls.Add(Me.showRep)
+        Me.Controls.Add(Me.crv1)
         Me.Name = "printReports"
-        Me.Text = "Print Inventory"
+        Me.Text = "Print Reports"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents viewer1 As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents crv1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents PALInventory1 As PAL_Inventory_System.PALInventory
+    Friend WithEvents showRep As System.Windows.Forms.Button
 End Class

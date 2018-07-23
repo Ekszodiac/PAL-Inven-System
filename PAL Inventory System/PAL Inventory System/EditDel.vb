@@ -43,17 +43,17 @@
     End Sub
 
     Private Sub delInvenBut_Click(sender As Object, e As EventArgs) Handles delInvenBut.Click
-        If MsgBox("The Selected Item will be deleted! Are you sure you wish to continue?", MsgBoxStyle.YesNo, "Delete User?") Then
+        Dim ask As MsgBoxResult = MsgBox("The Selected Item will be deleted! Are you sure you wish to continue?", MsgBoxStyle.YesNo, "Delete User?")
+        If ask = MsgBoxResult.Yes Then
+            SQL.AddParam("@sn", snTxtbx.Text)
             SQL.AddParam("@paltag", ptTxtbx.Text)
-            SQL.ExecQuery("DELETE FROM item WHERE item_paltag=@paltag;")
+            SQL.ExecQuery("DELETE FROM item WHERE item_paltag=@paltag AND item_sn=@sn;")
 
             MsgBox("The Selected Item has been successfully deleted!")
 
             Me.Hide()
             AdminForm.Show()
             AdminForm.LoadInven()
-        Else
-
         End If
     End Sub
 

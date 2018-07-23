@@ -30,6 +30,8 @@ Partial Class AdminForm
         Me.editdelBut = New System.Windows.Forms.Button()
         Me.addBtn = New System.Windows.Forms.Button()
         Me.dgv1 = New System.Windows.Forms.DataGridView()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.searchbut = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -129,11 +131,29 @@ Partial Class AdminForm
         Me.dgv1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgv1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv1.Location = New System.Drawing.Point(13, 109)
+        Me.dgv1.Location = New System.Drawing.Point(13, 139)
         Me.dgv1.Name = "dgv1"
         Me.dgv1.ReadOnly = True
-        Me.dgv1.Size = New System.Drawing.Size(777, 294)
+        Me.dgv1.Size = New System.Drawing.Size(777, 264)
         Me.dgv1.TabIndex = 1
+        '
+        'txtSearch
+        '
+        Me.txtSearch.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtSearch.Location = New System.Drawing.Point(605, 113)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(100, 20)
+        Me.txtSearch.TabIndex = 2
+        '
+        'searchbut
+        '
+        Me.searchbut.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.searchbut.Location = New System.Drawing.Point(715, 111)
+        Me.searchbut.Name = "searchbut"
+        Me.searchbut.Size = New System.Drawing.Size(75, 23)
+        Me.searchbut.TabIndex = 3
+        Me.searchbut.Text = "Search"
+        Me.searchbut.UseVisualStyleBackColor = True
         '
         'AdminForm
         '
@@ -141,6 +161,8 @@ Partial Class AdminForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(802, 415)
         Me.ControlBox = False
+        Me.Controls.Add(Me.searchbut)
+        Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.dgv1)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "AdminForm"
@@ -148,6 +170,7 @@ Partial Class AdminForm
         Me.Panel1.ResumeLayout(False)
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
@@ -158,4 +181,6 @@ Partial Class AdminForm
     Friend WithEvents addBtn As System.Windows.Forms.Button
     Friend WithEvents logBtn As System.Windows.Forms.Button
     Friend WithEvents dgv1 As System.Windows.Forms.DataGridView
+    Friend WithEvents txtSearch As System.Windows.Forms.TextBox
+    Friend WithEvents searchbut As System.Windows.Forms.Button
 End Class
