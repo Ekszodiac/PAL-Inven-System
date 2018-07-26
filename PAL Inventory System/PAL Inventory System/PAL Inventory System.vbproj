@@ -91,6 +91,12 @@
     <Compile Include="addInven.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="addLogs.Designer.vb">
+      <DependentUpon>addLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AdminForm.Designer.vb">
       <DependentUpon>AdminForm.vb</DependentUpon>
     </Compile>
@@ -108,6 +114,12 @@
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogED.Designer.vb">
+      <DependentUpon>LogED.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogED.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Logs.Designer.vb">
@@ -161,6 +173,18 @@
     <Compile Include="UserForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UserLogs.Designer.vb">
+      <DependentUpon>UserLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userPrint.Designer.vb">
+      <DependentUpon>userPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="userPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="actMgt.resx">
@@ -168,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addInven.resx">
       <DependentUpon>addInven.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addLogs.resx">
+      <DependentUpon>addLogs.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.vb</DependentUpon>
@@ -177,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogED.resx">
+      <DependentUpon>LogED.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logs.resx">
       <DependentUpon>Logs.vb</DependentUpon>
@@ -199,6 +229,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLogs.resx">
+      <DependentUpon>UserLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userPrint.resx">
+      <DependentUpon>userPrint.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

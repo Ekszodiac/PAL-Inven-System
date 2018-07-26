@@ -4,7 +4,7 @@
     Public Sub LoadInven(Optional Query As String = "")
         dgv1.Columns.Clear()
         If Query = "" Then
-            SQL.ExecQuery("SELECT item_description AS 'DESCRIPTION', item_paltag AS PALTAG, item_sn as SERIAL, item_acqdate AS ACQUISITION, item_remarks as REMARKS, item_timestamp AS 'TIMESTAMP' FROM item;")
+            SQL.ExecQuery("SELECT item_id AS 'ID',item_description AS 'DESCRIPTION', item_paltag AS PALTAG, item_sn as SERIAL, item_acqdate AS ACQUISITION, item_remarks as REMARKS, item_timestamp AS 'TIMESTAMP' FROM item;")
         Else
             SQL.ExecQuery(Query)
         End If
@@ -18,6 +18,7 @@
         dgv1.Columns.Add(checkCol)
         dgv1.DataSource = SQL.DBDT
         dgv1.Columns("CheckCol").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
+        dgv1.Columns("ID").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv1.Columns("PALTAG").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv1.Columns("DESCRIPTION").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv1.Columns("SERIAL").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
@@ -52,8 +53,6 @@
     End Sub
 
     Private Sub editdelBut_Click(sender As Object, e As EventArgs) Handles editdelBut.Click
-        'Me.Hide()
-        'EditDel.Show()
         If dgv1.Rows(dgv1.CurrentRow.Index).Cells(0).Value = True Then
             Me.Hide()
             EditDel.Show()
@@ -94,5 +93,10 @@
     Private Sub searchbut_Click(sender As Object, e As EventArgs) Handles searchbut.Click
         SQL.AddParam("@item", "%" & txtSearch.Text & "%")
         LoadInven("SELECT item_description AS 'DESCRIPTION', item_paltag AS PALTAG, item_sn as SERIAL, item_acqdate AS ACQUISITION, item_remarks as REMARKS, item_timestamp AS 'TIMESTAMP' FROM item WHERE item_description LIKE @item OR item_paltag LIKE @item OR item_sn LIKE @item OR item_remarks LIKE @item;")
+    End Sub
+
+    Private Sub actmgmtBut_Click(sender As Object, e As EventArgs) Handles actmgmtBut.Click
+        Me.Hide()
+        actMgt.Show()
     End Sub
 End Class

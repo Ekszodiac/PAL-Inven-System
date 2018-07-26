@@ -26,14 +26,17 @@ Partial Class UserForm
         Me.signOutBut = New System.Windows.Forms.Button()
         Me.printBut = New System.Windows.Forms.Button()
         Me.addBtn = New System.Windows.Forms.Button()
-        Me.lv1 = New System.Windows.Forms.ListView()
+        Me.dgv3 = New System.Windows.Forms.DataGridView()
+        Me.logBut = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
+        CType(Me.dgv3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel1.Controls.Add(Me.logBut)
         Me.Panel1.Controls.Add(Me.signOutBut)
         Me.Panel1.Controls.Add(Me.printBut)
         Me.Panel1.Controls.Add(Me.addBtn)
@@ -56,10 +59,9 @@ Partial Class UserForm
         '
         'printBut
         '
-        Me.printBut.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.printBut.BackColor = System.Drawing.SystemColors.Control
         Me.printBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.printBut.Location = New System.Drawing.Point(302, 8)
+        Me.printBut.Location = New System.Drawing.Point(201, 6)
         Me.printBut.Name = "printBut"
         Me.printBut.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.printBut.Size = New System.Drawing.Size(180, 85)
@@ -78,15 +80,33 @@ Partial Class UserForm
         Me.addBtn.Text = "ADD "
         Me.addBtn.UseVisualStyleBackColor = False
         '
-        'lv1
+        'dgv3
         '
-        Me.lv1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.dgv3.AllowUserToAddRows = False
+        Me.dgv3.AllowUserToDeleteRows = False
+        Me.dgv3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lv1.Location = New System.Drawing.Point(12, 119)
-        Me.lv1.Name = "lv1"
-        Me.lv1.Size = New System.Drawing.Size(786, 326)
-        Me.lv1.TabIndex = 2
-        Me.lv1.UseCompatibleStateImageBehavior = False
+        Me.dgv3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv3.Location = New System.Drawing.Point(13, 120)
+        Me.dgv3.Name = "dgv3"
+        Me.dgv3.ReadOnly = True
+        Me.dgv3.Size = New System.Drawing.Size(785, 325)
+        Me.dgv3.TabIndex = 1
+        '
+        'logBut
+        '
+        Me.logBut.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.logBut.BackColor = System.Drawing.SystemColors.Control
+        Me.logBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.logBut.Location = New System.Drawing.Point(417, 7)
+        Me.logBut.Name = "logBut"
+        Me.logBut.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.logBut.Size = New System.Drawing.Size(180, 85)
+        Me.logBut.TabIndex = 8
+        Me.logBut.Text = "LOGS"
+        Me.logBut.UseVisualStyleBackColor = False
         '
         'UserForm
         '
@@ -94,11 +114,12 @@ Partial Class UserForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(810, 457)
         Me.ControlBox = False
-        Me.Controls.Add(Me.lv1)
+        Me.Controls.Add(Me.dgv3)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "UserForm"
         Me.Text = "UserForm"
         Me.Panel1.ResumeLayout(False)
+        CType(Me.dgv3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -106,5 +127,6 @@ Partial Class UserForm
     Friend WithEvents signOutBut As System.Windows.Forms.Button
     Friend WithEvents printBut As System.Windows.Forms.Button
     Friend WithEvents addBtn As System.Windows.Forms.Button
-    Friend WithEvents lv1 As System.Windows.Forms.ListView
+    Friend WithEvents dgv3 As System.Windows.Forms.DataGridView
+    Friend WithEvents logBut As System.Windows.Forms.Button
 End Class

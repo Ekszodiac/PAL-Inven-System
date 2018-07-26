@@ -1,7 +1,7 @@
-﻿Public Class Logs
+﻿Public Class UserLogs
     Public SQL As New SQLControl
 
-    Private Sub Logs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub UserLogs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
         LoadLogs()
     End Sub
@@ -46,8 +46,8 @@
 
     Private Sub closeBut_Click(sender As Object, e As EventArgs) Handles closeBut.Click
         Me.Hide()
-        AdminForm.Show()
-        AdminForm.LoadInven()
+        UserForm.Show()
+        UserForm.LoadInven()
     End Sub
 
     Private Sub addBtn_Click(sender As Object, e As EventArgs) Handles addBtn.Click

@@ -36,6 +36,8 @@ Partial Class actMgt
         '
         'ListView1
         '
+        Me.ListView1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.ListView1.Location = New System.Drawing.Point(12, 12)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(258, 419)
@@ -44,6 +46,7 @@ Partial Class actMgt
         '
         'addAcc
         '
+        Me.addAcc.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.addAcc.Location = New System.Drawing.Point(485, 408)
         Me.addAcc.Name = "addAcc"
         Me.addAcc.Size = New System.Drawing.Size(75, 23)
@@ -53,6 +56,7 @@ Partial Class actMgt
         '
         'delAcc
         '
+        Me.delAcc.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.delAcc.Location = New System.Drawing.Point(566, 408)
         Me.delAcc.Name = "delAcc"
         Me.delAcc.Size = New System.Drawing.Size(117, 23)
@@ -62,6 +66,7 @@ Partial Class actMgt
         '
         'closeBut
         '
+        Me.closeBut.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.closeBut.Location = New System.Drawing.Point(689, 408)
         Me.closeBut.Name = "closeBut"
         Me.closeBut.Size = New System.Drawing.Size(75, 23)
@@ -72,7 +77,7 @@ Partial Class actMgt
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(277, 13)
+        Me.Label1.Location = New System.Drawing.Point(277, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(35, 13)
         Me.Label1.TabIndex = 5
@@ -99,7 +104,7 @@ Partial Class actMgt
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(383, 5)
+        Me.TextBox1.Location = New System.Drawing.Point(383, 15)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(162, 20)
         Me.TextBox1.TabIndex = 8

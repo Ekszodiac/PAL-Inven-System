@@ -1,7 +1,7 @@
-﻿Public Class printForm
+﻿Public Class userPrint
     Public SQL As New SQLControl
 
-    Private Sub printForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub userPrint_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
         loadItems()
     End Sub
@@ -28,7 +28,7 @@
         dgv2.Columns("DEPARTMENT").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
     End Sub
 
-    Private Sub printBut_Click(sender As Object, e As EventArgs) Handles printBut.Click
+    Private Sub printBut_Click(sender As Object, e As EventArgs) Handles print.Click
         If dgv2.Rows(dgv2.CurrentRow.Index).Cells(0).Value = True Then
 
             For Each row As DataGridViewRow In dgv2.Rows
@@ -44,8 +44,8 @@
 
     Private Sub cancelBut_Click(sender As Object, e As EventArgs) Handles cancelBut.Click
         Me.Hide()
-        AdminForm.Show()
-        AdminForm.LoadInven()
+        UserForm.Show()
+        UserForm.LoadInven()
     End Sub
 
     Private Sub txtSearch_Click(sender As Object, e As EventArgs) Handles txtSearch.Click
@@ -69,5 +69,4 @@
         dgv2.Columns("LOCATION").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv2.Columns("DEPARTMENT").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
     End Sub
-
 End Class

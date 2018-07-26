@@ -37,3 +37,7 @@ C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory S
 C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.printForm.resources
 C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL Inventory System.vbprojResolveAssemblyReference.cache
 C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.printReports.resources
+C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.addLogs.resources
+C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.LogED.resources
+C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.userPrint.resources
+C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.UserLogs.resources
