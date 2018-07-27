@@ -1,7 +1,7 @@
-﻿Public Class addLogs
+﻿Public Class userAdd
     Public SQL As New SQLControl
 
-    Private Sub addLogs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub userAdd_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
         loadLoc()
         loadDept()
@@ -37,7 +37,7 @@
 
     Private Sub closeBut_Click(sender As Object, e As EventArgs) Handles closeBut.Click
         Me.Hide()
-        Logs.Show()
+        UserLogs.Show()
     End Sub
 
     Private Sub addLog_Click(sender As Object, e As EventArgs) Handles addLog.Click
@@ -56,7 +56,7 @@
         SQL.ExecQuery("INSERT INTO logs (log_action, log_paltag, log_desc, log_timestamp, log_loc, log_dept) VALUES (@action, @paltag, @desc, @now, @loc, @dept)")
         MsgBox("Item added to the database!")
         Me.Hide()
-        Logs.Show()
-        Logs.LoadLogs()
+        UserLogs.Show()
+        UserLogs.LoadLogs()
     End Sub
 End Class

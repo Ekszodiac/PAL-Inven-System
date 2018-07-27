@@ -49,7 +49,7 @@ Partial Class addLogs
         '
         Me.txtBxAction.Location = New System.Drawing.Point(86, 5)
         Me.txtBxAction.Name = "txtBxAction"
-        Me.txtBxAction.Size = New System.Drawing.Size(171, 20)
+        Me.txtBxAction.Size = New System.Drawing.Size(191, 20)
         Me.txtBxAction.TabIndex = 1
         '
         'Label2
@@ -92,7 +92,7 @@ Partial Class addLogs
         '
         Me.cmbDesc.Location = New System.Drawing.Point(86, 67)
         Me.cmbDesc.Name = "cmbDesc"
-        Me.cmbDesc.Size = New System.Drawing.Size(171, 20)
+        Me.cmbDesc.Size = New System.Drawing.Size(191, 20)
         Me.cmbDesc.TabIndex = 8
         '
         'cmbPT
@@ -100,7 +100,7 @@ Partial Class addLogs
         Me.cmbPT.FormattingEnabled = True
         Me.cmbPT.Location = New System.Drawing.Point(86, 33)
         Me.cmbPT.Name = "cmbPT"
-        Me.cmbPT.Size = New System.Drawing.Size(171, 21)
+        Me.cmbPT.Size = New System.Drawing.Size(191, 21)
         Me.cmbPT.TabIndex = 9
         '
         'cmbLoc
@@ -108,7 +108,7 @@ Partial Class addLogs
         Me.cmbLoc.FormattingEnabled = True
         Me.cmbLoc.Location = New System.Drawing.Point(86, 93)
         Me.cmbLoc.Name = "cmbLoc"
-        Me.cmbLoc.Size = New System.Drawing.Size(171, 21)
+        Me.cmbLoc.Size = New System.Drawing.Size(191, 21)
         Me.cmbLoc.TabIndex = 11
         '
         'cmbDep
@@ -116,7 +116,7 @@ Partial Class addLogs
         Me.cmbDep.FormattingEnabled = True
         Me.cmbDep.Location = New System.Drawing.Point(86, 125)
         Me.cmbDep.Name = "cmbDep"
-        Me.cmbDep.Size = New System.Drawing.Size(171, 21)
+        Me.cmbDep.Size = New System.Drawing.Size(191, 21)
         Me.cmbDep.TabIndex = 12
         '
         'closeBut

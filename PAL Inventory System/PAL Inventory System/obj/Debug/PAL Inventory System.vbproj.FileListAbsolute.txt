@@ -41,3 +41,6 @@ C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory S
 C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.LogED.resources
 C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.userPrint.resources
 C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.UserLogs.resources
+C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.AccountsForm.resources
+C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.userAdd.resources
+C:\Users\Ekszodiac\Desktop\PAL-Inven-System\PAL Inventory System\PAL Inventory System\obj\Debug\PAL_Inventory_System.addUserInven.resources

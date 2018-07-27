@@ -97,6 +97,6 @@
 
     Private Sub actmgmtBut_Click(sender As Object, e As EventArgs) Handles actmgmtBut.Click
         Me.Hide()
-        actMgt.Show()
+        AccountsForm.Show()
     End Sub
 End Class

@@ -35,7 +35,7 @@
 
         cmbLoc.DataSource = SQL.DBDT
         cmbLoc.DisplayMember = "location_name"
-        cmbLoc.ValueMember = "location_ID"
+        cmbLoc.ValueMember = "location_name"
     End Sub
 
     Private Sub loadDept()
@@ -44,7 +44,7 @@
 
         cmbDep.DataSource = SQL.DBDT
         cmbDep.DisplayMember = "dept_name"
-        cmbDep.ValueMember = "dept_id"
+        cmbDep.ValueMember = "dept_name"
     End Sub
 
     Private Sub LoadItems()

@@ -8,7 +8,7 @@
 
     Public Sub LoadLogs()
         dgv3.Columns.Clear()
-        SQL.ExecQuery("SELECT log_ID AS 'ID',log_action as 'ACTION', log_paltag AS 'PALTAG', log_desc AS 'DESCRIPTION', log_userID as 'USER', log_timestamp as 'TIMESTAMP', log_loc as 'LOCATION', log_dept AS 'DEPARTMENT' FROM logs")
+        SQL.ExecQuery("SELECT log_ID AS 'ID',log_action as 'ACTION', log_paltag AS 'PALTAG', log_desc AS 'DESCRIPTION', log_timestamp as 'TIMESTAMP', log_loc as 'LOCATION', log_dept AS 'DEPARTMENT' FROM logs")
 
         Dim checkCol As DataGridViewCheckBoxColumn = New DataGridViewCheckBoxColumn()
         checkCol.HeaderText = "CheckBox"
@@ -23,7 +23,6 @@
         dgv3.Columns("ACTION").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv3.Columns("PALTAG").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv3.Columns("PALTAG").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
-        dgv3.Columns("USER").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv3.Columns("TIMESTAMP").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv3.Columns("LOCATION").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv3.Columns("DEPARTMENT").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter

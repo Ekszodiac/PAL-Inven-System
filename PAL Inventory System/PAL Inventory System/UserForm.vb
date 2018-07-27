@@ -15,14 +15,7 @@
         End If
 
         If Sql.HasException Then Exit Sub
-
-        Dim checkCol As DataGridViewCheckBoxColumn = New DataGridViewCheckBoxColumn()
-        checkCol.HeaderText = "CheckBox"
-        checkCol.Name = "CheckCol"
-
-        dgv3.Columns.Add(checkCol)
         dgv3.DataSource = SQL.DBDT
-        dgv3.Columns("CheckCol").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv3.Columns("ID").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv3.Columns("PALTAG").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv3.Columns("DESCRIPTION").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
@@ -34,7 +27,7 @@
 
     Private Sub addBtn_Click(sender As Object, e As EventArgs) Handles addBtn.Click
         Me.Hide()
-        addInven.Show()
+        addUserInven.Show()
     End Sub
 
 

@@ -25,13 +25,13 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.exitBut = New System.Windows.Forms.Button()
         Me.loginbut = New System.Windows.Forms.Button()
         Me.pwbox = New System.Windows.Forms.TextBox()
         Me.idbox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ISDLabel = New System.Windows.Forms.Label()
-        Me.exitBut = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -62,6 +62,19 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(345, 131)
         Me.Panel1.TabIndex = 2
         '
+        'exitBut
+        '
+        Me.exitBut.BackColor = System.Drawing.Color.Maroon
+        Me.exitBut.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.exitBut.FlatAppearance.BorderSize = 0
+        Me.exitBut.ForeColor = System.Drawing.Color.White
+        Me.exitBut.Location = New System.Drawing.Point(17, 81)
+        Me.exitBut.Name = "exitBut"
+        Me.exitBut.Size = New System.Drawing.Size(132, 38)
+        Me.exitBut.TabIndex = 10
+        Me.exitBut.Text = "Exit"
+        Me.exitBut.UseVisualStyleBackColor = False
+        '
         'loginbut
         '
         Me.loginbut.BackColor = System.Drawing.Color.Khaki
@@ -78,6 +91,7 @@ Partial Class Form1
         '
         Me.pwbox.Location = New System.Drawing.Point(134, 38)
         Me.pwbox.Name = "pwbox"
+        Me.pwbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.pwbox.Size = New System.Drawing.Size(197, 20)
         Me.pwbox.TabIndex = 8
         '
@@ -119,19 +133,6 @@ Partial Class Form1
         Me.ISDLabel.Size = New System.Drawing.Size(780, 46)
         Me.ISDLabel.TabIndex = 3
         Me.ISDLabel.Text = "INFORMATION SYSTEMS DEPARTMENT"
-        '
-        'exitBut
-        '
-        Me.exitBut.BackColor = System.Drawing.Color.Maroon
-        Me.exitBut.FlatAppearance.BorderColor = System.Drawing.Color.Gold
-        Me.exitBut.FlatAppearance.BorderSize = 0
-        Me.exitBut.ForeColor = System.Drawing.Color.White
-        Me.exitBut.Location = New System.Drawing.Point(17, 81)
-        Me.exitBut.Name = "exitBut"
-        Me.exitBut.Size = New System.Drawing.Size(132, 38)
-        Me.exitBut.TabIndex = 10
-        Me.exitBut.Text = "Exit"
-        Me.exitBut.UseVisualStyleBackColor = False
         '
         'Form1
         '

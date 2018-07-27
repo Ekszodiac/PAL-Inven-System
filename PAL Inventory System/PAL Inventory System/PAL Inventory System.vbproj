@@ -79,6 +79,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountsForm.Designer.vb">
+      <DependentUpon>AccountsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="actMgt.Designer.vb">
       <DependentUpon>actMgt.vb</DependentUpon>
     </Compile>
@@ -95,6 +101,12 @@
       <DependentUpon>addLogs.vb</DependentUpon>
     </Compile>
     <Compile Include="addLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUserInven.Designer.vb">
+      <DependentUpon>addUserInven.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addUserInven.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminForm.Designer.vb">
@@ -167,6 +179,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SQLControl.vb" />
+    <Compile Include="userAdd.Designer.vb">
+      <DependentUpon>userAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="userAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UserForm.Designer.vb">
       <DependentUpon>UserForm.vb</DependentUpon>
     </Compile>
@@ -187,6 +205,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AccountsForm.resx">
+      <DependentUpon>AccountsForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="actMgt.resx">
       <DependentUpon>actMgt.vb</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addLogs.resx">
       <DependentUpon>addLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addUserInven.resx">
+      <DependentUpon>addUserInven.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.vb</DependentUpon>
@@ -226,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="printReports.resx">
       <DependentUpon>printReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userAdd.resx">
+      <DependentUpon>userAdd.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.vb</DependentUpon>
