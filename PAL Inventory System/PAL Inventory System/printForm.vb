@@ -8,7 +8,7 @@
 
     Private Sub loadItems()
         dgv2.Columns.Clear()
-        SQL.ExecQuery("SELECT log_action as 'ACTION', log_paltag AS 'PALTAG', log_desc AS 'DESCRIPTION', log_timestamp as 'TIMESTAMP', log_loc as 'LOCATION', log_dept AS 'DEPARTMENT' FROM logs")
+        SQL.ExecQuery("SELECT item_id AS 'ID',item_description AS 'DESCRIPTION', item_paltag AS PALTAG, item_sn as SERIAL, item_acqdate AS ACQUISITION, item_remarks as REMARKS, item_timestamp AS 'TIMESTAMP' FROM item;")
 
         Dim checkCol As DataGridViewCheckBoxColumn = New DataGridViewCheckBoxColumn
         checkCol.HeaderText = "Checkbox"
@@ -19,26 +19,32 @@
         dgv2.ReadOnly = False
 
         dgv2.Columns("checkCol").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
-        dgv2.Columns("ACTION").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
+        dgv2.Columns("ID").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv2.Columns("DESCRIPTION").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv2.Columns("PALTAG").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
+        dgv2.Columns("SERIAL").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
+        dgv2.Columns("ACQUISITION").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
+        dgv2.Columns("REMARKS").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
         dgv2.Columns("TIMESTAMP").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
-        dgv2.Columns("LOCATION").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
-        dgv2.Columns("DEPARTMENT").HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter
     End Sub
 
     Private Sub printBut_Click(sender As Object, e As EventArgs) Handles printBut.Click
-        If dgv2.Rows(dgv2.CurrentRow.Index).Cells(0).Value = True Then
+        If dgv2.Rows.Count > 0 Then
+            If dgv2.Rows(dgv2.CurrentRow.Index).Cells(0).Value = True Then
 
-            For Each row As DataGridViewRow In dgv2.Rows
-                Dim isSelected As Boolean = Convert.ToBoolean(row.Cells("CheckCol").Value)
-                If isSelected Then
-                    printReports.Show()
-                End If
-            Next
+                For Each row As DataGridViewRow In dgv2.Rows
+                    Dim isSelected As Boolean = Convert.ToBoolean(row.Cells("CheckCol").Value)
+                    If isSelected Then
+                        printReports.Show()
+                    End If
+                Next
+            Else
+                MsgBox("Please select a row to print!")
+            End If
         Else
-            MsgBox("Please select a row to print!")
+            MsgBox("Empty Data!")
         End If
+        
     End Sub
 
     Private Sub cancelBut_Click(sender As Object, e As EventArgs) Handles cancelBut.Click

@@ -23,7 +23,6 @@ Partial Class UserLogs
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.addBtn = New System.Windows.Forms.Button()
-        Me.deleteBut = New System.Windows.Forms.Button()
         Me.dgv3 = New System.Windows.Forms.DataGridView()
         Me.closeBut = New System.Windows.Forms.Button()
         CType(Me.dgv3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -32,22 +31,12 @@ Partial Class UserLogs
         'addBtn
         '
         Me.addBtn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.addBtn.Location = New System.Drawing.Point(504, 491)
+        Me.addBtn.Location = New System.Drawing.Point(585, 491)
         Me.addBtn.Name = "addBtn"
         Me.addBtn.Size = New System.Drawing.Size(75, 23)
         Me.addBtn.TabIndex = 10
         Me.addBtn.Text = "Add"
         Me.addBtn.UseVisualStyleBackColor = True
-        '
-        'deleteBut
-        '
-        Me.deleteBut.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.deleteBut.Location = New System.Drawing.Point(585, 491)
-        Me.deleteBut.Name = "deleteBut"
-        Me.deleteBut.Size = New System.Drawing.Size(75, 23)
-        Me.deleteBut.TabIndex = 9
-        Me.deleteBut.Text = "Delete"
-        Me.deleteBut.UseVisualStyleBackColor = True
         '
         'dgv3
         '
@@ -81,7 +70,6 @@ Partial Class UserLogs
         Me.ClientSize = New System.Drawing.Size(753, 526)
         Me.ControlBox = False
         Me.Controls.Add(Me.addBtn)
-        Me.Controls.Add(Me.deleteBut)
         Me.Controls.Add(Me.dgv3)
         Me.Controls.Add(Me.closeBut)
         Me.Name = "UserLogs"
@@ -91,7 +79,6 @@ Partial Class UserLogs
 
     End Sub
     Friend WithEvents addBtn As System.Windows.Forms.Button
-    Friend WithEvents deleteBut As System.Windows.Forms.Button
     Friend WithEvents dgv3 As System.Windows.Forms.DataGridView
     Friend WithEvents closeBut As System.Windows.Forms.Button
 End Class

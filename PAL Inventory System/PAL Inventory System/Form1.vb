@@ -46,6 +46,8 @@ Public Class Form1
                 UserForm.Show()
             End If
         End If
+        idbox.Text = ""
+        pwbox.Text = ""
     End Sub
 
     Private Sub exitBut_Click(sender As Object, e As EventArgs) Handles exitBut.Click
@@ -65,4 +67,5 @@ Public Class Form1
         End If
 
     End Sub
+
 End Class

@@ -55,23 +55,28 @@
     End Sub
 
     Private Sub editdelBut_Click(sender As Object, e As EventArgs) Handles deleteBut.Click
-        If dgv3.Rows(dgv3.CurrentRow.Index).Cells(0).Value = True Then
+        If dgv3.Rows.Count > 0 Then
+            If dgv3.Rows(dgv3.CurrentRow.Index).Cells(0).Value = True Then
 
-            For Each row As DataGridViewRow In dgv3.Rows
-                Dim isSelected As Boolean = Convert.ToBoolean(row.Cells("CheckCol").Value)
-                If isSelected Then
-                    Dim ask As MsgBoxResult = MsgBox("Are you sure you want to delete this log?", MsgBoxStyle.YesNo)
-                    If ask = MsgBoxResult.Yes Then
-                        SQL.AddParam("@delID", row.Cells("ID").Value.ToString())
-                        SQL.ExecQuery("DELETE FROM logs WHERE log_id=@delID;")
+                For Each row As DataGridViewRow In dgv3.Rows
+                    Dim isSelected As Boolean = Convert.ToBoolean(row.Cells("CheckCol").Value)
+                    If isSelected Then
+                        Dim ask As MsgBoxResult = MsgBox("Are you sure you want to delete this log?", MsgBoxStyle.YesNo)
+                        If ask = MsgBoxResult.Yes Then
+                            SQL.AddParam("@delID", row.Cells("ID").Value.ToString())
+                            SQL.ExecQuery("DELETE FROM logs WHERE log_id=@delID;")
 
-                        MsgBox("The Selected log has been successfully deleted!")
-                        LoadLogs()
+                            MsgBox("The Selected log has been successfully deleted!")
+                            LoadLogs()
+                        End If
                     End If
-                End If
-            Next
+                Next
+            Else
+                MsgBox("Please select a row to edit or delete!")
+            End If
         Else
-            MsgBox("Please select a row to edit or delete!")
+            MsgBox("Empty Data!")
         End If
+        
     End Sub
 End Class

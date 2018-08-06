@@ -46,12 +46,12 @@
             For Each row As DataGridViewRow In dgv1.Rows
                 Dim isSelected As Boolean = Convert.ToBoolean(row.Cells("CheckCol").Value)
                 If isSelected Then
-                    Dim ask As MsgBoxResult = MsgBox("Are you sure you want to delete this log?", MsgBoxStyle.YesNo)
+                    Dim ask As MsgBoxResult = MsgBox("Are you sure you want to delete this user?", MsgBoxStyle.YesNo)
                     If ask = MsgBoxResult.Yes Then
                         SQL.AddParam("@delID", row.Cells("ID").Value.ToString())
                         SQL.ExecQuery("DELETE FROM pa_user WHERE user_idnum=@delID;")
 
-                        MsgBox("The Selected log has been successfully deleted!")
+                        MsgBox("The Selected user has been successfully deleted!")
                         loadAcc()
                     End If
                 End If

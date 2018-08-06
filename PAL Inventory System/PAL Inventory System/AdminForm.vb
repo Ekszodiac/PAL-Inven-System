@@ -53,23 +53,27 @@
     End Sub
 
     Private Sub editdelBut_Click(sender As Object, e As EventArgs) Handles editdelBut.Click
-        If dgv1.Rows(dgv1.CurrentRow.Index).Cells(0).Value = True Then
-            Me.Hide()
-            EditDel.Show()
+        If dgv1.Rows.Count > 0 Then
+            If dgv1.Rows(dgv1.CurrentRow.Index).Cells(0).Value = True Then
+                Me.Hide()
+                EditDel.Show()
 
-            For Each row As DataGridViewRow In dgv1.Rows
-                Dim isSelected As Boolean = Convert.ToBoolean(row.Cells("CheckCol").Value)
-                If isSelected Then
-                    EditDel.ptTxtbx.Text = row.Cells("PALTAG").Value.ToString()
-                    EditDel.descTxtbx.Text = row.Cells("DESCRIPTION").Value.ToString()
-                    EditDel.snTxtbx.Text = row.Cells("SERIAL").Value.ToString()
-                    EditDel.remTxtbx.Text = row.Cells("REMARKS").Value.ToString()
-                    EditDel.acqBox.Value = row.Cells("TIMESTAMP").Value
-                End If
-            Next
+                For Each row As DataGridViewRow In dgv1.Rows
+                    Dim isSelected As Boolean = Convert.ToBoolean(row.Cells("CheckCol").Value)
+                    If isSelected Then
+                        EditDel.ptTxtbx.Text = row.Cells("PALTAG").Value.ToString()
+                        EditDel.descTxtbx.Text = row.Cells("DESCRIPTION").Value.ToString()
+                        EditDel.snTxtbx.Text = row.Cells("SERIAL").Value.ToString()
+                        EditDel.remTxtbx.Text = row.Cells("REMARKS").Value.ToString()
+                        EditDel.acqBox.Value = row.Cells("TIMESTAMP").Value
+                    End If
+                Next
+            Else
+                MsgBox("Please select a row to edit or delete!")
+            End If
         Else
-            MsgBox("Please select a row to edit or delete!")
-        End If
+            MsgBox("Empty Data!")
+        End If       
     End Sub
 
     Private Sub signOutBut_Click(sender As Object, e As EventArgs) Handles signOutBut.Click

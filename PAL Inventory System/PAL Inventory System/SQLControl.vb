@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class SQLControl
-    Private DBCon As New SqlConnection("Server=RVO;Database=PAL_INVEN;Trusted_Connection=True")
+    Private DBCon As New SqlConnection("Server=PALADMIN;Database=PAL_INVEN;Trusted_Connection=True")
     Private str As String = "Data Source=RVO;Initial Catalog=PAL_INVEN;Integrated Security=True"
     Public DBCmd As SqlCommand
 

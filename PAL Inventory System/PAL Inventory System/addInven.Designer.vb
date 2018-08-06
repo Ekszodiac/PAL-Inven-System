@@ -99,6 +99,7 @@ Partial Class addInven
         'remTxtbx
         '
         Me.remTxtbx.Location = New System.Drawing.Point(183, 118)
+        Me.remTxtbx.MaxLength = 300
         Me.remTxtbx.Name = "remTxtbx"
         Me.remTxtbx.Size = New System.Drawing.Size(200, 20)
         Me.remTxtbx.TabIndex = 9
@@ -106,6 +107,7 @@ Partial Class addInven
         'snTxtbx
         '
         Me.snTxtbx.Location = New System.Drawing.Point(183, 82)
+        Me.snTxtbx.MaxLength = 50
         Me.snTxtbx.Name = "snTxtbx"
         Me.snTxtbx.Size = New System.Drawing.Size(200, 20)
         Me.snTxtbx.TabIndex = 8
@@ -113,6 +115,7 @@ Partial Class addInven
         'descTxtbx
         '
         Me.descTxtbx.Location = New System.Drawing.Point(183, 45)
+        Me.descTxtbx.MaxLength = 300
         Me.descTxtbx.Name = "descTxtbx"
         Me.descTxtbx.Size = New System.Drawing.Size(200, 20)
         Me.descTxtbx.TabIndex = 7
@@ -120,6 +123,7 @@ Partial Class addInven
         'ptTxtbx
         '
         Me.ptTxtbx.Location = New System.Drawing.Point(183, 8)
+        Me.ptTxtbx.MaxLength = 50
         Me.ptTxtbx.Name = "ptTxtbx"
         Me.ptTxtbx.Size = New System.Drawing.Size(200, 20)
         Me.ptTxtbx.TabIndex = 6

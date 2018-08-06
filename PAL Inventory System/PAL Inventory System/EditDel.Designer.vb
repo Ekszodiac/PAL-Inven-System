@@ -96,6 +96,7 @@ Partial Class EditDel
         '
         Me.remTxtbx.Enabled = False
         Me.remTxtbx.Location = New System.Drawing.Point(173, 112)
+        Me.remTxtbx.MaxLength = 300
         Me.remTxtbx.Name = "remTxtbx"
         Me.remTxtbx.Size = New System.Drawing.Size(200, 20)
         Me.remTxtbx.TabIndex = 23
@@ -104,6 +105,7 @@ Partial Class EditDel
         '
         Me.snTxtbx.Enabled = False
         Me.snTxtbx.Location = New System.Drawing.Point(173, 76)
+        Me.snTxtbx.MaxLength = 50
         Me.snTxtbx.Name = "snTxtbx"
         Me.snTxtbx.Size = New System.Drawing.Size(200, 20)
         Me.snTxtbx.TabIndex = 22
@@ -112,6 +114,7 @@ Partial Class EditDel
         '
         Me.descTxtbx.Enabled = False
         Me.descTxtbx.Location = New System.Drawing.Point(173, 39)
+        Me.descTxtbx.MaxLength = 300
         Me.descTxtbx.Name = "descTxtbx"
         Me.descTxtbx.Size = New System.Drawing.Size(200, 20)
         Me.descTxtbx.TabIndex = 21
@@ -120,6 +123,7 @@ Partial Class EditDel
         '
         Me.ptTxtbx.Enabled = False
         Me.ptTxtbx.Location = New System.Drawing.Point(173, 2)
+        Me.ptTxtbx.MaxLength = 50
         Me.ptTxtbx.Name = "ptTxtbx"
         Me.ptTxtbx.Size = New System.Drawing.Size(200, 20)
         Me.ptTxtbx.TabIndex = 20

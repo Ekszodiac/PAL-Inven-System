@@ -54,7 +54,7 @@
         userAdd.Show()
     End Sub
 
-    Private Sub editdelBut_Click(sender As Object, e As EventArgs) Handles deleteBut.Click
+    Private Sub editdelBut_Click(sender As Object, e As EventArgs)
         If dgv3.Rows(dgv3.CurrentRow.Index).Cells(0).Value = True Then
 
             For Each row As DataGridViewRow In dgv3.Rows
